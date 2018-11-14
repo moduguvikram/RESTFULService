@@ -1,5 +1,5 @@
 
-package org.vik.rest;
+package org.vik.rest.model;
 
 import javax.xml.bind.annotation.XmlRootElement;
 import java.io.Serializable;

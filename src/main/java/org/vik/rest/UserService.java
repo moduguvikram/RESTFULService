@@ -1,8 +1,9 @@
 package org.vik.rest;
 
+import org.vik.rest.model.User;
+
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
-import javax.ws.rs.core.Response;
 import java.util.ArrayList;
 import java.util.List;
 
