@@ -17,14 +17,14 @@ public class RESTClient {
 
             DefaultHttpClient httpClient = new DefaultHttpClient();
             HttpGet getRequest = new HttpGet(
-                    "http://localhost:3030/RESTFULService/rest/UserService/users");
-            //getRequest.addHeader("accept", "application/json");
+                    "http://localhost:3030/RESTFULService/StudentService/students");
+            getRequest.addHeader("accept", "application/json");
 //            getRequest.setParams();
 
             HttpResponse response = httpClient.execute(getRequest);
 
             if (response.getStatusLine().getStatusCode() != 200) {
-                throw new RuntimeException("Failed : HTTP error code : "
+                throw new Exception("Failed : HTTP error code : "
                         + response.getStatusLine().getStatusCode());
             }
 
@@ -46,6 +46,9 @@ public class RESTClient {
         } catch (IOException e) {
 
             e.printStackTrace();
+        } catch(Exception ex)
+        {
+            ex.printStackTrace();
         }
 
     }

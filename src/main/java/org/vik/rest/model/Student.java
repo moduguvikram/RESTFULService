@@ -1,9 +1,12 @@
 package org.vik.rest.model;
 
 
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
 import java.io.Serializable;
 
 
+@XmlRootElement
 public class Student implements Serializable {
 
 
@@ -29,7 +32,7 @@ public class Student implements Serializable {
     public int getId() {
         return id;
     }
-
+    @XmlElement
     public void setId(int id) {
         this.id = id;
     }
@@ -37,7 +40,7 @@ public class Student implements Serializable {
     public String getName() {
         return name;
     }
-
+    @XmlElement
     public void setName(String name) {
         this.name = name;
     }
@@ -45,7 +48,7 @@ public class Student implements Serializable {
     public int getAge() {
         return age;
     }
-
+    @XmlElement
     public void setAge(int age) {
         this.age = age;
     }

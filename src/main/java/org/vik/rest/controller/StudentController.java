@@ -15,10 +15,11 @@ public class StudentController {
 
     @GET
     @Path("/students")
-    @Produces(MediaType.APPLICATION_JSON)
+    @Produces({MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML})
     public List<Student> getAllStudents() {
         return studentDAO.getAllStudents();
     }
+
 
     @POST
     @Path("/addStudent")
@@ -95,7 +96,7 @@ public class StudentController {
  *       "name": "vik",
  *       "age": 19
  *     }
- *     localhost:3030/RESTFULService/StudentService/delete/5
+ * localhost:3030/RESTFULService/StudentService/delete/5
  * localhost:3030/RESTFULService/StudentService/hello?id={1}&name={vicky}
  * localhost:3030/RESTFULService/StudentService/{}
  */
