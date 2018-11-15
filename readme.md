@@ -6,11 +6,10 @@ What is a Web Service? how they are different from web application?
 3. Synchrounous communication.
 
 
-
-									JMS => specification given by sun micro systems.
-										=> Tibco
-										=> RabbitMQ
-										=> ActiveMQ => apache software...
+JMS => specification given by sun micro systems.
+	=> Tibco
+	=> RabbitMQ
+	=> ActiveMQ => apache software...
 	
 Data exchange model?	xml, json, yml, or custom.
 
