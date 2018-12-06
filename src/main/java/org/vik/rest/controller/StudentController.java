@@ -2,7 +2,7 @@ package org.vik.rest.controller;
 
 import org.vik.rest.dao.StudentDAO;
 import org.vik.rest.model.Student;
-import org.vik.rest.model.User;
+
 
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
